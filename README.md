@@ -22,11 +22,8 @@ Or install it yourself as:
 
 See Mail documentation [here](http://github.com/mikel/mail).
 
-	account = Gmailish::Account.new(username, password)
+	account = Gmailish::Account.process(username, password)
 	#=> #<Gmailish::Account:0x007f89dcaa7950>
-	
-	account.process
-	#=> #<Gmailish::Account:0x007ff175d69ed0>
 	
 	messages = account.messages
 	#=> [#<Mail::Message:70337520506800>, #<Mail::Message:70337520506801>]
@@ -60,9 +57,7 @@ See Mail documentation [here](http://github.com/mikel/mail).
 	  private
 
 	  def mailer
-	    Gmailish::Account.new(username, password).tap do |account|
-	      account.process
-	    end
+	    Gmailish::Account.process(username, password)
 	  end
 
 	  def username
