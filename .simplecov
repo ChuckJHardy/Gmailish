@@ -1,3 +1,4 @@
+require 'coveralls'
 require 'simplecov-vim/formatter'
 
 SimpleCov.configure do
@@ -7,6 +8,7 @@ SimpleCov.configure do
   start('rails') do
     formatter SimpleCov::Formatter::MultiFormatter[
       SimpleCov::Formatter::HTMLFormatter,
+      Coveralls::SimpleCov::Formatter,
       SimpleCov::Formatter::VimFormatter
     ]
 
