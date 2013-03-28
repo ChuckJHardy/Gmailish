@@ -1,7 +1,7 @@
 require "gmailish/version"
+require 'net/imap'
+require 'mail'
 
-module Gmailish
-  # Your code goes here...
-end
+module Gmailish; end
 
 require 'gmailish/all'
