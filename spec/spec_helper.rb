@@ -6,6 +6,8 @@ require 'rspec/fire'
 require 'rspec/autorun'
 require 'gmailish'
 
+Dir["#{File.dirname(__FILE__)}/support/**/*.rb"].each {|f| require f}
+
 RSpec.configure do |config|
   config.order = "random"
   config.filter_run :focus => true
