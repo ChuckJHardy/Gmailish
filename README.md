@@ -1,6 +1,5 @@
-[![Build Status](https://travis-ci.org/ChuckJHardy/Gmailish.png)](https://travis-ci.org/ChuckJHardy/Gmailish) [![Coverage Status](https://coveralls.io/repos/ChuckJHardy/Gmailish/badge.png?branch=master)](https://coveralls.io/r/ChuckJHardy/Gmailish) [![Gem Version](https://badge.fury.io/rb/gmailish.png)](https://rubygems.org/gems/gmailish) [![Maintained Status](http://stillmaintained.com/ChuckJHardy/Gmailish.png)](http://stillmaintained.com/ChuckJHardy/Gmailish)
+# Gmailish [![Build Status](https://travis-ci.org/ChuckJHardy/Gmailish.png)](https://travis-ci.org/ChuckJHardy/Gmailish) [![Coverage Status](https://coveralls.io/repos/ChuckJHardy/Gmailish/badge.png?branch=master)](https://coveralls.io/r/ChuckJHardy/Gmailish) [![Gem Version](https://badge.fury.io/rb/gmailish.png)](https://rubygems.org/gems/gmailish) [![Dependency Status](https://gemnasium.com/ChuckJHardy/Gmailish.png)](https://gemnasium.com/ChuckJhardy/Gmailish)
 
-# Gmailish
 Grabs unread emails from Gmail, marks them as read, applies a `Transfered` label and archives them.
 
 ## Installation
@@ -74,7 +73,7 @@ See Mail documentation [here](http://github.com/mikel/mail).
 * net/imap
 * [Mail](http://rubygems.org/gems/mail)
 
-## Contributing
+## Contributing [![Maintained Status](http://stillmaintained.com/ChuckJHardy/Gmailish.png)](http://stillmaintained.com/ChuckJHardy/Gmailish)
 
 1. Fork it
 2. Create your feature branch (`git checkout -b my-new-feature`)
