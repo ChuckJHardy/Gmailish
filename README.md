@@ -1,4 +1,4 @@
-# Gmailish [![Build Status](https://travis-ci.org/ChuckJHardy/Gmailish.png)](https://travis-ci.org/ChuckJHardy/Gmailish) [![Coverage Status](https://coveralls.io/repos/ChuckJHardy/Gmailish/badge.png?branch=master)](https://coveralls.io/r/ChuckJHardy/Gmailish) [![Gem Version](https://badge.fury.io/rb/gmailish.png)](https://rubygems.org/gems/gmailish) [![Dependency Status](https://gemnasium.com/ChuckJHardy/Gmailish.png)](https://gemnasium.com/ChuckJhardy/Gmailish)
+# Gmailish [![Build Status](https://travis-ci.org/ChuckJHardy/Gmailish.png)](https://travis-ci.org/ChuckJHardy/Gmailish) [![Coverage Status](https://coveralls.io/repos/ChuckJHardy/Gmailish/badge.png?branch=master)](https://coveralls.io/r/ChuckJHardy/Gmailish) [![Code Climate](https://codeclimate.com/github/ChuckJHardy/Gmailish.png)](https://codeclimate.com/github/ChuckJHardy/Gmailish) [![Gem Version](https://badge.fury.io/rb/gmailish.png)](https://rubygems.org/gems/gmailish) [![Dependency Status](https://gemnasium.com/ChuckJHardy/Gmailish.png)](https://gemnasium.com/ChuckJhardy/Gmailish)
 
 Grabs unread emails from Gmail, marks them as read, applies a `Transfered` label and archives them.
 
