@@ -49,7 +49,7 @@ See Mail documentation [here](http://github.com/mikel/mail).
 	  end
 
 	  def messages
-	    @messages ||= mailer.messages
+	    mailer.messages
 	  end
 
 	  private
