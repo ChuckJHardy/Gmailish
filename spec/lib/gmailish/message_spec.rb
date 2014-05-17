@@ -5,7 +5,7 @@ module Gmailish
     let(:instance) { Gmailish::Message.new(account, uid) }
     let(:uid) { 37 }
     let(:account) {
-      fire_double(
+      instance_double(
         'Net::IMAP'
       )
     }
@@ -33,21 +33,21 @@ module Gmailish
       let(:rfc) { 'RFC822' }
 
       let(:labeler) {
-        fire_double(
+        instance_double(
           'Gmailish::Labeler',
           :transfered => true
         )
       }
 
       let(:flagger) {
-        fire_double(
+        instance_double(
           'Gmailish::Flagger',
           :unread => true
         )
       }
 
       let(:mover) {
-        fire_double(
+        instance_double(
           'Gmailish::Mover',
           :archive => true
         )
@@ -78,14 +78,14 @@ module Gmailish
 
         let(:messages) { [ message ] }
         let(:message) {
-          fire_double(
+          instance_double(
             'Net::IMAP::FetchData',
             :attr => attr
           )
         }
 
         let(:mail) {
-          fire_double(
+          instance_double(
             'Mail'
           )
         }

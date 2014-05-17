@@ -6,19 +6,19 @@ module Gmailish
     let(:username) { 'venkmanapp' }
     let(:password) { 'ABC123456' }
     let(:account) {
-      fire_double(
+      instance_double(
         'Net::IMAP'
       )
     }
 
     let(:message) {
-      fire_double(
+      instance_double(
         'Gmailish::Message'
       )
     }
 
     let(:response) {
-      fire_double(
+      instance_double(
         'Net::IMAP::TaggedResponse',
         :name => 'OK'
       )

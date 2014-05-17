@@ -1,5 +1,4 @@
 require 'coveralls'
-require 'simplecov-vim/formatter'
 
 SimpleCov.configure do
   minimum_coverage 95
@@ -8,8 +7,7 @@ SimpleCov.configure do
   start('rails') do
     formatter SimpleCov::Formatter::MultiFormatter[
       SimpleCov::Formatter::HTMLFormatter,
-      Coveralls::SimpleCov::Formatter,
-      SimpleCov::Formatter::VimFormatter
+      Coveralls::SimpleCov::Formatter
     ]
 
     add_group "Long files" do |src_file|

@@ -7,7 +7,7 @@ module Gmailish
     let(:password) { 'ABC123456' }
 
     let(:account) {
-      fire_double(
+      instance_double(
         'Net::IMAP'
       )
     }
@@ -32,7 +32,7 @@ module Gmailish
       subject { instance.process }
 
       let(:actions) {
-        fire_double(
+        instance_double(
           'Gmailish::Actions'
         )
       }
@@ -66,7 +66,7 @@ module Gmailish
       let(:uid) { 37 }
       let(:uids) { [ uid ] }
       let(:message) {
-        fire_double(
+        instance_double(
           'Gmailish::Message'
         )
       }

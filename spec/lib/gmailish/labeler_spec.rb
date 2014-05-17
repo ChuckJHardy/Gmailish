@@ -5,7 +5,7 @@ module Gmailish
     let(:instance) { Gmailish::Labeler.new(account, uid) }
     let(:uid) { 37 }
     let(:account) {
-      fire_double(
+      instance_double(
         'Net::IMAP'
       )
     }

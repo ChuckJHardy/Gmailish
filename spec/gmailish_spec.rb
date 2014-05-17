@@ -8,20 +8,20 @@ module Gmailish
     let(:password) { 'ABC123456' }
 
     let(:account) {
-      fire_double(
+      instance_double(
         'Net::IMAP'
       )
     }
 
     let(:tagged_response) {
-      fire_double(
+      instance_double(
         'Net::IMAP::TaggedResponse',
         :name => 'OK'
       )
     }
 
     let(:fetch_data) {
-      fire_double(
+      instance_double(
         'Net::IMAP::FetchData',
         :attr => Gmailish::SupportData.fake_fetch_data_response
       )

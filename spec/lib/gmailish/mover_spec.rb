@@ -5,7 +5,7 @@ module Gmailish
     let(:instance) { Mover.new(account, uid) }
     let(:uid) { 37 }
     let(:account) {
-      fire_double(
+      instance_double(
         'Net::IMAP'
       )
     }
@@ -20,14 +20,14 @@ module Gmailish
       subject { instance.archive }
 
       let(:labeler) {
-        fire_double(
+        instance_double(
           'Gmailish::Labeler',
           :all_mail => true
         )
       }
 
       let(:flagger) {
-        fire_double(
+        instance_double(
           'Gmailish::Flagger',
           :delete => true
         )
